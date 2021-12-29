@@ -231,16 +231,7 @@ export async function activate(funbox) {
       );
       UpdateConfig.setHighlightMode("letter", true);
       TestLogic.restart(false, true);
-    } else if (funbox === "arrows") {
-      $("#words").addClass("arrows");
-      rememberSetting(
-        "highlightMode",
-        Config.highlightMode,
-        UpdateConfig.setHighlightMode
-      );
-      UpdateConfig.setHighlightMode("letter", true);
-      TestLogic.restart(false, true);
-    }
+    } 
   }
 
   // if (funbox !== "layoutfluid" || mode !== "script") {
